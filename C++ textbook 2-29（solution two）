@@ -1,0 +1,35 @@
+# schoolwork-code
+＃这个C ++程序是在上学时写的.-- ChoiNgai
+#include "stdafx.h"
+
+#include "iostream"
+
+using namespace std;
+
+int main( )
+
+{
+
+	int i,j;	bool flag;
+
+	for( i=2;i<=100;i++){
+
+		flag=false;
+
+	for(j=2;j<i;j++){
+
+		if(i%j==0)
+
+			flag=true;
+
+			}
+
+			if(flag==false)
+
+		cout<<i<<" ";
+
+		}	
+
+	return 0;
+
+}
