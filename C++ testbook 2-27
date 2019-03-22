@@ -1,0 +1,33 @@
+# schoolwork-code
+＃这个C ++程序是在上学时写的.-- ChoiNgai
+#include "stdafx.h"
+
+#include "iostream"
+
+using namespace std;
+
+void main( )
+
+{
+
+	int s;				//score	cout<<"please input your score:";
+
+	cin>>s;
+
+	if(90<=s&s<=100)
+
+		cout<<"excellent"<<endl;
+
+	if(80<=s&s<90)
+
+		cout<<"good"<<endl;
+
+	if(70<=s&s<80)
+
+		cout<<"commom"<<endl;
+
+	if(60<=s&s<70)
+
+		cout<<"bad"<<endl;
+
+}
