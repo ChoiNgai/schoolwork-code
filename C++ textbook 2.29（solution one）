@@ -15,7 +15,8 @@ void main( )
 	bool flag;
 
 	flag=false;
-
+       cout＜＜“2”；
+	
 	while(i<100){
 
 		i+=1;
@@ -29,7 +30,7 @@ void main( )
 		break;
 
 		if(j==i-1)
-
+       
 			cout<<i<<" ";
 
 			
