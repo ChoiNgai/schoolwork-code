@@ -15,6 +15,7 @@ void main( )
 	bool flag;
 
 	flag=false;
+	
        cout＜＜“2”；
 	
 	while(i<100){
