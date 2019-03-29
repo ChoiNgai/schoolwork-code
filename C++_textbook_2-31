@@ -1,0 +1,50 @@
+# schoolwork-code
+＃This C++ program was written at school time.——ChoiNgai
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>                  
+
+using namespace std;
+
+int main()
+{
+    enum color{red, yellow, blue, white, black};//0 1 2 3 4 
+    color pri;
+    int i, j, k, n=0;
+
+    for (i=0; i<5; i++)
+        for (j=0; j<5; j++)
+            if (i != j)
+                for (k=0; k<5; k++)
+                {
+                    if (k != j && k != i)
+                    {
+                        n++;
+                        cout << setw(3) << n << ":";
+
+                        for (int loop=1; loop<=3; loop++)
+                        {
+                            switch(loop)
+                            {
+                                case 1: pri = color(i); break; //强制转换 
+                                case 2: pri = color(j); break;
+                                case 3: pri = color(k); break;
+                            }
+                            switch(pri)
+                            {
+                                case 0: cout << setw(8) << "red"; break;
+                                case 1: cout << setw(8) << "yellow"; break;
+                                case 2: cout << setw(8) << "blue"; break;
+                                case 3: cout << setw(8) << "white"; break;
+                                case 4: cout << setw(8) << "black"; break;
+                            }
+                        }
+
+                        cout << endl;
+                    }
+                }
+    cout << "total:" << n<<endl;
+
+    return 0;
+
+}
