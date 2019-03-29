@@ -31,3 +31,4 @@ int main( 	)
 
 	return 0;
 }
+//注:代码能在codeblocks上运行,在VS2012会报错
