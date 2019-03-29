@@ -1,0 +1,33 @@
+# schoolwork-code
+＃This C++ program was written at school time.——ChoiNgai
+#include "stdafx.h"
+#include <iostream>
+#include <iomanip>                  
+
+using namespace std;
+
+
+struct Time
+{
+	int year;
+	int month;
+	int day;
+	int hour;
+	int minute;
+	int second;
+};
+
+
+int main( 	)
+{
+
+	cout<<"please input (year,month,day,hour,minute,second):"<<endl;
+
+	Time stu={stu.year,stu.month,stu.day,stu.hour,stu.minute,stu.second};
+
+	cin>>stu.year>>stu.month>>stu.day >>stu.hour >>stu.minute >>stu.second;
+
+	cout<<stu.year<<"year "<<stu.month<<"month "<<stu.day<<"day "<<stu.minute<<"minute "<<stu.second<<"second ";
+
+	return 0;
+}
