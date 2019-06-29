@@ -1,0 +1,53 @@
+# schoolwork-code
+＃This C++ program was written at school time.——ChoiNgai
+#include "stdafx.h"
+#include<iostream> 
+using namespace std; 
+ 
+class Complex 
+{ 
+ public: 
+ Complex(float i1,float i2);    //complex类里i1在后面作为整数参数,i2在后面作为负数参数
+ Complex(float j);					//j作为另一个初始化参数
+ void add(Complex &c);			//值传递
+ void show();
+  
+ private: 
+ float n;								//整数参数
+ float i;									//复数参数
+}; 
+ 
+Complex::Complex(float i1,float i2) 
+{ 
+ n=i1; 
+ i=i2; 
+} 
+
+ Complex::Complex(float i3) 
+ { 
+  n=i3; 
+  i=0; 
+ } 
+ 
+void Complex::add(Complex &c) 
+{ 
+	n+=c.n; 
+	i+=c.i; 
+} 
+ 
+void Complex::show() 
+{ 
+ cout<<n;
+ if(i>0)cout<<"+"<<i<<"i"<<endl;
+ else cout<<i<<"i"<<endl;
+} 
+ 
+ 
+int main() 
+{ 
+ Complex c1(3,5); 
+ Complex c2=4.5; 
+ c1.add(c2); 
+ c1.show(); 
+ return 0; 
+}
